@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+div .contents{
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 3% 3% 0 3%;
+    }
+.Mind{
+    margin-top: 5%;
+    text-align: center;
+	display: block;
+    /*センタリングしたい*/
+}
+.Mind_txt{
+    display: inline-block;
+    text-align: left;
+    /*ーをwidthフルにしたいときは.philosophyに移動*/
+    border-bottom: 3px solid #ff8a62;
+    padding-bottom: 0.8rem;
+}
+
+.Mind_txt h4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.font {
+    margin-top: 5%;
+}
+
+.font .font_txt h4{
+    padding-left: 1rem;
+    margin-top: 3%;
+}
+.font_txt h4 span{
+    display: inline-block;/*忘れない*/
+    width: 10rem;
+}
+
+.style-guide{
+    margin-left:1rem;  
+    margin-top: 3%; 
+}
+
+.font-flex{
+    display: flex;
+    background-color:rgba(54, 125, 125, 0.2);
+    box-sizing: border-box;
+    width: max-content;
+    margin-left:1rem;
+    padding: 1rem 2rem;
+}
+
+.style-guide_txt h3{
+    margin-bottom: 0rem;
+}
+
+.font-size{
+    width: 10rem;
+    text-align: right;
+}
+.font-size h3{
+    margin-bottom: 0rem;
+}
+div.intention{
+    padding-left: 1rem;  
+    margin-top:3%;
+}
+
+div.intention p{
+    padding-left: 1rem;
+    margin-top: 0px;
+}
+
+.logo {
+    margin-top: 5%;
+}
+
+.logo .logo_img{
+    margin-top: 3%;
+    padding-left: 2rem;
+    width: 30%;
+    display: block;
+}
+
+.logo div.intention p{
+    margin-top: 3%; 
+}
+
+div.intention .logo_expimg{
+    display: block;
+    width: 80%;
+}
+
+  .logo_flex{
+      width: 100%;
+      box-sizing: border-box;
+      margin-left: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .logochange_img {
+    width: 45%;
+    align-items: center;
+  }
+  .logochange_img img{
+    width: 100%;
+    display: block;  
+    margin-bottom: 1rem; 
+  }
+ .logochange_img p{
+    text-align: center;
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #ff5736;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 5rem;
+  }
+  
+  p.logochange_txt{
+      margin-top: 1rem;
+  }
+
+.color {
+    margin-top: 5%;
+}
+.color_palette{
+ margin-top: 3%;
+ margin-left: 1rem;
+}
+.primary{
+    padding:1rem;
+    width:30%;
+    height: auto;
+    background-color: #ff5736;
+    margin-top: 0px;
+    padding: 0.4rem 1rem;
+}
+.p-light{
+    padding:1rem;
+    width:30%;
+    height: auto;
+    background-color: #ff8a62;
+    margin-top: 0px;
+    padding: 0.4rem 1rem;
+}
+
+.secondary{
+    padding:1rem;
+    width:30%;
+    height: auto;
+    background-color:#367dff;
+    margin-top: 0px;
+    padding: 0.4rem 1rem;
+}

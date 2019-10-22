@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+div#wrapper{
+ font-family: 'futura-pt','a-otf-gothic-bbb-pr6n',sans-serif;
+ box-sizing: border-box;
+ margin:0px 15px 5% 15px;
+}
+h1{
+    font-size: 45px;
+    color: #fff;
+    -webkit-text-stroke: 1px #000;
+    /*ベンダープレフィックス for chrome,safari*/
+    text-stroke: 1px #000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2{
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3{
+    font-size: 28px; 
+    margin-top: 0px;
+    margin-bottom: 1rem;  
+}
+h4{
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.subtitle{
+    padding-left: 0px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+span.notes{
+    font-size:14px ;
+    color: #ff8a62;
+    font-weight: 700;
+}
+
+header{
+    width: 100%;
+    font-size: 22px;
+}
+.header_flex{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;/*各アイテムの均等配置、最初のアイテムは先頭・最後のアイテムは末尾*/
+    align-items: center;
+}
+
+.header_flex a img{
+ display: block;
+ width: 100px;
+ height:auto;
+}
+.header_flex a img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+div .navi{
+    display: flex;
+}
+
+div .navi p{
+    margin-left: 1.5rem;
+}
+
+div .navi p:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+div .navi a{
+    text-decoration: none;
+    color: #000;
+}
+
+.top_slider img{
+display: block;
+height: 100vh;
+margin: 0 auto;
+}

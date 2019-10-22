@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+div#wrapper{
+    font-style: normal;   
+}
+
+div .contents{
+box-sizing: border-box;
+padding: 3% 3% 0 3%;
+}
+
+section.introduction{
+    margin-top: 5%;
+}
+
+.Profile{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;/*勝手に要素が高さを揃えるために伸びてしまうのを防ぐ*/
+}
+
+.Profile_txt{
+    width: 50%;/*本来40%で揃うはずなのにできない*/
+}
+
+.Profile_txt h1{
+    margin: 0 auto;
+}
+.Profile p{
+    font-size: 18px;
+    line-height: 1.8rem;
+    padding-left: 1rem;
+}
+
+.Profile span{
+    display: inline-block;
+    width: 7rem;
+}
+
+.Profile_img{
+    width: 50%;
+}
+.Profile_img img{
+    display: block;
+    width: 80%;}
+
+.biography{
+    margin-top: 10%;
+}
+
+.biography h2{
+
+    margin: 0 auto;
+}
+.biography p{
+    font-size: 14px;   
+    padding-left: 1rem;
+}
+
+.experience_skill{
+    margin-top: 5%;
+}
+
+.experience_skill h1{
+
+    font-size: 22px;
+}
+
+.experience_skill p{
+    font-size: 18px;
+    padding-left: 1rem;
+}
+
+.experience_skill .skill{
+    margin-top: 5%;
+}
+
+.experience_skill .skill p{
+    margin-top: 0.2rem;   
+    font-size: 18px;
+    padding-left: 1rem;
+}
+.experience_skill .skill .skill_flex{
+    display: flex;
+    padding-left: 1rem;
+}
+
+.skill_flex p span{
+    display: inline-block;
+    width: 7rem;
+}
+
+.skill .skill_flex .design{
+    width: 50%;
+}
+
+.skill .skill_flex .technology{
+    width: 50%;
+}
