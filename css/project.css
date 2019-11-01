@@ -96,6 +96,13 @@ position: relative;
     width: 60%;
 }
 
+.project_instaslide img{
+    margin: 0 auto;
+    display: block;
+    width: 45%;
+}
+
+
 .project_CPS{
     margin-top: 3%;
 }
@@ -148,3 +155,6 @@ div.self_detail p span{
  .viewtext:hover{
   color: #fff ;
   }
+
+}
+
