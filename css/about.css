@@ -4,11 +4,6 @@ div#wrapper{
     font-style: normal;   
 }
 
-div .contents{
-box-sizing: border-box;
-padding: 3% 3% 0 3%;
-}
-
 section.introduction{
     margin-top: 5%;
 }
