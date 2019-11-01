@@ -111,7 +111,22 @@ div.self_detail p span{
 
 .project_url a{
     margin-left: 2rem;
+    color: #367dff;
+    text-decoration: none;
 }
+
+.project_url a:hover{
+    opacity: 0.5;
+}
+
+.project_logo{
+    color: #367dff;
+    text-decoration: none;   
+}
+.project_logo:hover{
+    opacity: 0.5; 
+}
+
 .project_url span{
     margin-left: 1rem;
 }
@@ -150,5 +165,5 @@ div.self_detail p span{
   color: #fff ;
   }
 
-}
+
 
