@@ -1,16 +1,101 @@
 @charset "UTF-8";
 
+.process{
+    margin: 1rem;
+    margin-top: 3%;
+    padding: 1rem;
+    background-color: #e6e6e6;
+}
+.CI_flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.CI_flexitem {
+    width: calc(90%/3);
+}
+
+.CI_flexitem h2{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+/* .whatisCI{
+    margin-top: 1rem;
+    width: 250px;
+    height: 250px;
+    background-color: #ff5736;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 50%;
+} */
+.whatisCI_item{
+    color: #fff;
+}
+
+.CI_title{
+    width: 8rem;
+}
+.flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adjust-box {
+    position: relative;
+    height: auto;
+    width: calc(90%/3);
+    background:#ff5736;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.box-1x1:before {
+
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.adjust-box p {
+    line-height: 1.5em;
+    padding: 1rem;
+}
+
 .Mind{
-    margin-top: 5%;
-    text-align: center;
+    margin-top: 1rem;
+
 	display: block;
     /*センタリングしたい*/
 }
+
+
+.Mind_top{
+    margin-top: 5%;
+}
 .Mind_txt{
-    display: inline-block;
+    display: block;
     text-align: left;
     /*ーをwidthフルにしたいときは.philosophyに移動*/
-    border-bottom: 3px solid #ff8a62;
+    border-bottom: 2px solid #c0c0c0;
     padding-bottom: 0.8rem;
 }
 
@@ -19,8 +104,29 @@
     margin-bottom: 1rem;
 }
 
+.Mind_lasttxt{
+    border-bottom: none;
+}
+
 .font {
-    margin-top: 5%;
+    margin-top: 1rem;
+
+}
+.VI_list{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: max-content;
+    border-top:2px solid #ff5736;
+    border-bottom: 2px solid #ff5736;
+}
+
+.VI_list h3{
+    margin-bottom: 0.5rem;
+}
+.VI_list p{
+    margin-top:0;
 }
 
 .font .font_txt h4{
@@ -33,39 +139,46 @@
 }
 
 .style-guide{
-    margin-left:1rem;  
+    margin-left: 1rem;
     margin-top: 3%; 
 }
-
-.font-flex{
-    display: flex;
-    background-color:rgba(54, 125, 125, 0.2);
-    box-sizing: border-box;
-    width: max-content;
-    margin-left:1rem;
+.style-guide_txt{
+    width: 100%;
+    margin: 1rem;
     padding: 1rem 2rem;
+    box-sizing: border-box;
+    background-color:#e6e6e6; 
 }
-
 .style-guide_txt h3{
     margin-bottom: 0rem;
 }
+.font-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
 
 .font-size{
-    width: 10rem;
-    text-align: right;
+display: inline-block;
+width: 20rem;    
 }
-.font-size h3{
-    margin-bottom: 0rem;
+
+.inline{
+    display: inline-block;
 }
+
 div.intention{
-    padding-left: 1rem;  
     margin-top:3%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
 }
 
 div.intention p{
     padding-left: 1rem;
-    margin-top: 0px;
+    padding-right: 1rem;  
 }
+
 
 .logo {
     margin-top: 5%;
@@ -74,24 +187,24 @@ div.intention p{
 .logo .logo_img{
     margin-top: 3%;
     padding-left: 2rem;
-    width: 30%;
+    box-sizing: border-box;
+    width: 50%;
     display: block;
 }
 
 .logo div.intention p{
-    margin-top: 3%; 
+    margin-bottom: 3%; 
 }
 
 div.intention .logo_expimg{
     display: block;
-    width: 80%;
+    width: 100%;
 }
 
   .logo_flex{
       width: 100%;
       box-sizing: border-box;
-      margin-left: 1rem;
-      margin-top: 1rem;
+      margin-top: 2rem;
       margin-bottom: 0rem;
       display: flex;
       align-items: flex-start;
@@ -104,24 +217,20 @@ div.intention .logo_expimg{
   }
   .logochange_img img{
     width: 100%;
-    display: block;  
+    display: block; 
+    margin: 0 auto;
     margin-bottom: 1rem; 
   }
  .logochange_img p{
     text-align: center;
   }
-  .triangle {
-    width: 0;
-    height: 0;
-    border-top: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-left: 30px solid #ff5736;
-    display: block;
-    text-align: center;
-    align-items: center;
-    margin-left: 15px;
-    margin-bottom: 5rem;
+ p.triangle {
+      color: #ff5736;
+      width: 5%;
+      font-size: 5vw;
+      align-items: center;
+      margin-top:0%;
+      margin-left: -1rem;
   }
   
   p.logochange_txt{
@@ -132,31 +241,138 @@ div.intention .logo_expimg{
     margin-top: 5%;
 }
 .color_palette{
+    width: 100%;
+    margin: 1rem;
  margin-top: 3%;
- margin-left: 1rem;
+ display: flex;
+ flex-wrap: wrap;
 }
+
 .primary{
-    padding:1rem;
-    width:30%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
+    width: 40%;
     height: auto;
     background-color: #ff5736;
     margin-top: 0px;
-    padding: 0.4rem 1rem;
+    white-space: nowrap;
 }
+
 .p-light{
-    padding:1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
     width:30%;
     height: auto;
     background-color: #ff8a62;
     margin-top: 0px;
-    padding: 0.4rem 1rem;
+    white-space: nowrap;
 }
 
 .secondary{
-    padding:1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
     width:30%;
     height: auto;
-    background-color:#367dff;
+    background-color:#e6e6e6;
     margin-top: 0px;
-    padding: 0.4rem 1rem;
+    white-space: nowrap;
+}
+
+span.c0c0c0{
+    color: #c0c0c0;
+}
+
+span.e6e6e6{
+    color: #e6e6e6;
+}
+
+/* Extra large devices (large desktops, 1200px and up) 
+default*/
+@media (min-width: 1200px) { }
+
+ /* Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) and (max-width: 1199.98px)  { 
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) and (max-width: 991.98px)  { 
+    .whatisCI{
+        width: 180px;
+        height: 180px;}
+ }
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+    .whatisCI{
+        width: 180px;
+        height: 180px;
+ }
+    .logo .logo_img{
+        width: 100%;
+    }      
+  }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+.CI_flexitem{
+    margin: 0 auto;
+
+}
+    .logo .logo_img{
+        width: 100%;
+    }
+
+    .VI_list{
+        width: auto;
+    }
+
+    .primary{
+        margin-right: calc(16px + 1rem);
+        padding-bottom: 2rem;
+        width: 100%;
+
+    }
+    .p-light{
+        margin-right: calc(16px + 1rem);
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+    
+    .secondary{
+        margin-right: calc(16px + 1rem);
+        padding-bottom: 2rem;
+        width: 100%;
+
+    }
+    div.intention{
+        margin-top:5%;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    p.triangle {
+        font-size: 8vw;
+    }
+
+.style-guide{
+    margin-left:0rem;  
+    margin-right: calc(16px + 1rem);
+}
+
+.font-flex{
+    padding: 1rem 1.5rem;
+}
+.CI_flex{
+    flex-direction: column;
+
+}
+
+
 }

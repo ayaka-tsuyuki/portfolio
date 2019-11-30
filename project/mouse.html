@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/project.css">
         <link rel="stylesheet" href="https://use.typekit.net/nng2xhs.css">
+        <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon-180x180.png">　
+        <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
     <!--中ゴシック--> 
 <script>
         (function(d) {
@@ -25,27 +28,35 @@
            <header>
             <div class="header_flex">   
         <div> <a href="../index.html"><img src="../img/top/logo.png"></a></div>
-           <div class="navi">
+        <input type="checkbox" id="trigger">
+           <nav class="navi">
+              <label for="trigger">
+                  <span>メニュー展開</span>
+                  </label>
             <p> <a href="../index.html">Home</a></p>
             <p><a href="../about.html">About</a></p>
             <p> <a href="../philosophy.html">Philosophy</a></p>
-            <p> <a href="../project/index.html">Project</a></p>
-           </div><!--navi-->
+            <p class="nav_now"> <a href="../project/index.html">Project</a></p>
+           </nav><!--navi-->
+           <label for="trigger" id="coverlayer">メニュー展開</label>
             </div><!--header_flex-->
                </header>
                <div class="contents">
                <h1 class="project_title">WEB Direction</h1>
-               <div class="project_details">
-<p class="project_slide">
-   <img src="../img/project/mouse/mouse_mv.png">
-</p><!-- project_slide -->
+               <p class="indent">
+                  某PCメーカーのキャンペーンページのアシスタントディレクターを担当しました。この案件はかなり大型の案件で、業界を転身して初めて、自分が担当した案件でした。<br>
+                  具体的な業務内容は、社内進行/撮影の同行/コピーライトの作成/画像の選定などです。<br>
+                  この案件(現場)を通して、有名なモデルさんを起用する政治的な難しさや、広告代理店を介した制作会社で働く大変さを学びました。<br>
+                  下記のリンクより、該当ページにアクセスできます。<span class="notes"> *私が担当を離れたあと、内容が変更されています。</span>
+                 </p>
+              <div class="viewsite"> <a href="https://www.mouse-jp.co.jp/campaign/nogizaka46/" class="viewsite_text" target="_blank">>>該当URLはこちら</a></div>
 
-<h2>Summary</h2>
-               <p>
-                 某PCメーカーのキャンペーンページのディレクション(アシスタント)を担当しました。
-                 <div class="project_url"><span class="subtitle"> 関連URL</span><span class="notes"> *私が担当を離れたあと、内容が変更されています。</span><br>
-                <a href="https://www.mouse-jp.co.jp/campaign/nogizaka46/"  target="_blank"> https://www.mouse-jp.co.jp/campaign/nogizaka46/</a>
-              </div>
+               <div class="project_details">
+<div class="project_slide">
+  　PCのメインビジュアル
+   <img src="../img/project/mouse/mouse_mv.png">
+</div><!-- project_slide -->
+
               <div class="project_CPS">
                 <h3>Category</h3> <h4>WEB site</h4> <br>
                 <h3>Priod</h3><h4>2018.10-2019.12</h4><br>
@@ -53,6 +64,12 @@
               </div><!--project_CPS-->
                 </p>
                 </div><!--project_details-->
+
+                <footer class="project_button">
+                 <div class="button_item"> <a href="../project/selfbranding.html" class="url">◀︎Pre</a></div>
+                 <div class="button_item">  <div class="viewimage"> <h4><a href="../project/index.html" class="viewtext">Back&nbsp;to&nbsp;List</a></h4></div></div>
+                 <div class="button_item">    <a href="../project/NS_redna.html" class="url">Next▶︎</a></div>
+                  </footer><!--project_button-->
                 </div><!--contents-->
               </div><!--wrapper-->
               </body>

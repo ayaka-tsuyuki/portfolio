@@ -4,53 +4,57 @@ div#wrapper{
     font-style: normal;   
 }
 
-section.introduction{
-    margin-top: 5%;
-}
-
 .Profile{
+    width: 100%;
+    margin:0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;/*勝手に要素が高さを揃えるために伸びてしまうのを防ぐ*/
 }
-
-.Profile_txt{
-    width: 50%;/*本来40%で揃うはずなのにできない*/
-}
-
-.Profile_txt h1{
-    margin: 0 auto;
-}
-.Profile p{
-    font-size: 18px;
-    line-height: 1.8rem;
-    padding-left: 1rem;
-}
-
-.Profile span{
-    display: inline-block;
-    width: 7rem;
-}
-
 .Profile_img{
     width: 50%;
 }
+
 .Profile_img img{
     display: block;
-    width: 80%;}
+    width: 80%;
+}
+.about_txt{
+    width: 50%;/*本来40%で揃うはずなのにできない*/
+}
+
+.about_txt h1{
+    margin: 0 auto;
+}
+
+.profile_txt{
+    margin-bottom: 2rem;
+}
+
+.profile_txt h4{
+    margin-top:1rem;
+}
+
+
+.Profile span{
+    display: inline-block;
+    width: 8rem;
+}
 
 .biography{
-    margin-top: 10%;
+    margin-top:3%;
+    border-top: #ff5736 2px solid;
+    padding-top: 1rem;
 }
 
 .biography h2{
 
     margin: 0 auto;
 }
-.biography p{
-    font-size: 14px;   
-    padding-left: 1rem;
-}
+
+/*indentで統一*/
+
 
 .experience_skill{
     margin-top: 5%;
@@ -63,9 +67,30 @@ section.introduction{
 
 .experience_skill p{
     font-size: 18px;
-    padding-left: 1rem;
 }
 
+.experience_skill .experience p span{
+    padding-left:1rem;
+    padding-right: 1rem;
+    background-color: #ff5736;
+    color: #fff;
+    height: 2rem;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.experience .experience_flex{
+    padding-right: 20%;
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+.experience .experience_flex p{
+    padding-left: 1rem;
+}
 .experience_skill .skill{
     margin-top: 5%;
 }
@@ -73,11 +98,11 @@ section.introduction{
 .experience_skill .skill p{
     margin-top: 0.2rem;   
     font-size: 18px;
-    padding-left: 1rem;
+
 }
 .experience_skill .skill .skill_flex{
     display: flex;
-    padding-left: 1rem;
+    flex-wrap: wrap;
 }
 
 .skill_flex p span{
@@ -92,3 +117,81 @@ section.introduction{
 .skill .skill_flex .technology{
     width: 50%;
 }
+
+.star{
+    color: #ff5736;
+}
+
+/* Extra large devices (large desktops, 1200px and up) 
+default*/
+@media (min-width: 1200px) { }
+
+ /* Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) and (max-width: 1199.98px)  { 
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) and (max-width: 991.98px)  { 
+    .Profile_img{
+        width: 100%;
+    }
+    .Profile_img img{
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .about_txt{
+        width: 100%;
+        margin-top: 3%;
+    }
+ }
+
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+    .Profile_img{
+        width: 100%;
+    }
+    .Profile_img img{
+        margin: 0 auto;
+    }
+    .about_txt{
+        width: 100%;
+        margin-top: 3%;
+    }
+    .experience .experience_flex{
+        padding-right: 0%;
+    }
+
+
+  }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .Profile_img{
+        width: 100%;
+    }
+    .Profile_img img{
+        margin: 0 auto;
+    }
+
+    .about_txt{
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    .experience .experience_flex{
+        padding-right: 0%;
+    }
+
+    .skill .skill_flex .design{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .skill .skill_flex .technology{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+ }

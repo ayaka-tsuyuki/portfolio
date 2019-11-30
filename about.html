@@ -3,8 +3,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="initial-scale=1.0,width=device-width">
 <link rel="stylesheet" href="css/style.css">
+
 <link rel="stylesheet" href="css/about.css">
 <link rel="stylesheet" href="https://use.typekit.net/nng2xhs.css">
+<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">　
+<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
 <!--中ゴシック--> 
 <script>
         (function(d) {
@@ -20,65 +24,87 @@
 <body>
         <div id="wrapper">
 
-                <header>
+                <header class="color">
                  <div class="header_flex">   
              <div> <a href="index.html"><img src="img/top/logo.png"></a></div>
-                <div class="navi">
+             <input type="checkbox" id="trigger">
+                <nav class="navi">
+                    <label for="trigger">
+                        <span>メニュー展開</span>
+                        </label>
                  <p> <a href="index.html">Home</a></p>
-                 <p><a href="about.html">About</a></p>
+                 <p class="nav_now"><a href="about.html">About</a></p>
                  <p> <a href="philosophy.html">Philosophy</a></p>
                  <p> <a href="project/index.html">Project</a></p>
-                </div><!--navi-->
+                </nav><!--navi-->
+                <label for="trigger" id="coverlayer">メニュー展開</label>
                  </div><!--header_flex-->
                     </header>
                     <div class="contents">
           <h1>About</h1>
-                    <section class="introduction">
+                    <section class="contents_margin-top">
                         <div class="Profile">
                             <div class="Profile_img"><img src="img/about/portrait.jpg"></div>
-                           <div class="Profile_txt">
-                              <h3>Profile</h3>
-                              <p>
+                           <div class="about_txt">
+                             <div class="profile_txt">
+                              <h2>Profile</h2>
+                              <h4 class="indent">
                             <span class="subtitle">Specialty</span>Design<br>
                             <span class="subtitle">Birthday</span>27th February 1995<br>
-                           <span class="subtitle">Base</span>Tokyo, Japan</p>
-                        
+                           <span class="subtitle">Base</span>Tokyo, Japan</h4>
+                             </div><!--Profile_txt-->
+
                            <div class="biography">
-                           <h3>Biography</h3>
-                           <p>2017年に新卒で商社系Slerに就職。技術職志望で入社するも. 営業配属。<br>
-                               創り手になる気持ちを諦めきれず. 翌年1月より終業後に学校に通い. 同年9月に卒業。同月にキャリアチェンジに成功。<br>
-                               その後. ディレクション経験を経て. デザイン/コーデディングの案件を複数経験し. 今に至る。          
+                           <h2>Biography</h2>
+                           <p class="indent">2017年に新卒で商社系Slerに就職。就職活動中から技術職を志願していたものの、営業配属。"自分も実際に手を動かして、ものを作る喜びを知りたい"という思いは日に日に強くなった。<br>
+                              そこで、翌年1月より<a href="https://www.tokyo-designplex.com/" class="url" target="_blank">WEBデザインの専門学校</a>に通うことを決心し、日中は通常業務をこなしながら終業後に学校へ週3〜4回通いつめた。<br>
+                              同年9月に学校を卒業し、<a href="http://tokyo-d-plex.com/~1801mt_tsuyuki/last_wine2/" class="url" target="_black">制作物</a>ができた段階で現職に転職。<br>
+                              その後、ディレクション経験を経て、2019年2月より念願のデザイン/コーデディングの案件を複数経験している。<br>
+                              現在は技術的なスキルを高めるだけでなく、自分の領域を広げるため<a href="https://extroom.studio/rooms/umu_tokyo" class="url" target="_black">コミュニティ</a>に参加したり、より作品に深みを出すべく<a href="https://compe.japandesign.ne.jp/rhythm-award/" class="url" target="_black">コンペ</a>に挑戦したりして、理想を掴むべく日々デザインや自分自身と向き合い続けている。
                            </p>     
                         </div><!--biography -->
-                        </div><!--Profile_txt-->
+                        
+                        </div><!--about_txt-->
                         </div><!--Profile-->
                     </section><!--introduction-->
 
 
         <section class="experience_skill">
-            <h3>Experience</h3>
-            <p>Web design/Graphic design/UIUX design/Cording/Drection/Typography/Contents creation/Team building etc...</p>
+          <div class="experience">
+            <h2>Experience</h2>
+            <div class="experience_flex">
+           <p><span>Web design</span></p>
+            <p><span>Graphic design</span></p>
+            <p><span>UIUX design</span></p>
+            <p><span>Coding</span></p>
+            <p><span>Drection</span></p>
+            <p><span>Typography</span></p>
+            <p><span>Contents creation</span></p>
+            <p><span>Team building</span></p>
+            </div><!--experience_flex-->
+          </div><!--experience-->
+
             <div class="skill">
-            <h3>Technical Skill</h3>
-            <div class="skill_flex">
+            <h2>Technical Skill</h2>
+            <div class="skill_flex indent">
             <div class="design">
              <h4> Design</h4>
-             <p>
-              <span>Photoshop</span>★★★★☆<br>
-              <span>Illustorator</span>★★★☆☆<br>
-              <span>XD</span>★★★☆☆<br>
-              <span>Dimention</span>★★☆☆☆<br>
-              <span>Premire Pro</span>★☆☆☆☆<br>
+             <p class="indent">
+              <span>Photoshop</span><span class="star">★★★★☆</span><br>
+              <span>Illustorator</span><span class="star">★★★☆☆</span><br>
+              <span>XD</span><span class="star">★★☆☆☆</span><br>
+              <span>Dimention</span><span class="star">★★☆☆☆</span><br>
+              <span>Premire Pro</span><span class="star">★★☆☆☆</span>
               </p>
                 </div><!--design-->
                 <div class="technology">
              <h4> Technology</h4>
-             <p>
-              <span>HTML5</span>★★★★☆<br>
-              <span>CSS3</span>★★★★☆<br>
-              <span>SCSS</span>★★★☆☆<br>
-              <span>JavaScript</span>★★★☆☆<br>
-              <span>Git/Github</span>★★★☆☆<br>
+             <p class="indent">
+              <span>HTML5</span><span class="star">★★★☆☆</span><br>
+              <span>CSS3</span><span class="star">★★★☆☆</span><br>
+              <span>Git/Github</span><span class="star">★★★☆☆</span><br>
+              <span>SCSS</span><span class="star">★★☆☆☆</span><br>
+              <span>JavaScript</span><span class="star">★★☆☆☆</span>
               </p>
                     </div><!--technology-->
             </div><!--skill_flex-->

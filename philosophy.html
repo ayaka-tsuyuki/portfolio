@@ -3,8 +3,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="initial-scale=1.0,width=device-width">
 <link rel="stylesheet" href="css/style.css">
+
 <link rel="stylesheet" href="css/Philosophy.css">
 <link rel="stylesheet" href="https://use.typekit.net/nng2xhs.css">
+<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">　
+<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
 <!--中ゴシック--> 
 <script>
         (function(d) {
@@ -23,26 +27,80 @@
                 <header>
                  <div class="header_flex">   
              <div> <a href="index.html"><img src="img/top/logo.png"></a></div>
-                <div class="navi">
+             <input type="checkbox" id="trigger">
+                <nav class="navi">
+                    <label for="trigger">
+                        <span>メニュー展開</span>
+                        </label>
                  <p> <a href="index.html">Home</a></p>
                  <p><a href="about.html">About</a></p>
-                 <p> <a href="philosophy.html">Philosophy</a></p>
+                 <p class="nav_now"> <a href="philosophy.html">Philosophy</a></p>
                  <p> <a href="project/index.html">Project</a></p>
-                </div><!--navi-->
+                </nav><!--navi-->
+                <label for="trigger" id="coverlayer">メニュー展開</label>
                  </div><!--header_flex-->
                     </header>
                     <div class="contents">
                     <h1>Philosophy</h1>
+                    <p class="indent contents_margin-top">
+                      ここのページでは自分自身を商品とみたて、CIを構成する要素であるMI/BI/VIを設計しました。<br>
+                      それらには、私のクリエイション全般に対する考え方(哲学)が詰まっています。<br>
+                      MI/BI/VIをデザインする際は下記のプロセスを踏んでおり、各工程を行ったり来たりしています。</p>
+
+                    <div class="process indent">
+                      <h4>Process</h4>
+                      <p class="indent">
+                        1. 自分自身のクリエイションのに対する思いやイメージをまとめる<br>
+                        2. 自身の作品を見る人、モノ創りにおいて関わる相手にどのように伝えると適切なのかを考える<br>
+                        3. 上記2つを思想・ビジュアルで表現で体現する</p>
+                      </p>
+                      </div>
+                      <p class="indent contents_margin-top">
+                        MI/CI/VIをデザインしたものが、下記の通りです。<br>
+                        オレンジ色で記載した箇所はそれぞれに対する自分なりの解釈とさせていただいております。
+                        </p>
                     <section class="Mind">
-                      <div class="Mind_txt">
-                      <h2>Mind</h2>
-                      <h4>
-                        デジタルをただの選択肢と捉えて、<br>
-                        時空を行ったり来たりする
+                      <div class="Mind_txt Mind_top">
+                      <h2 class="inline CI_title">Ⅰ. MI</h2><p class="subtitle inline primary_color">自分(たち)が社会に対して与えたいインパクト</p>
+                      <p class="indent">
+                          -ヒトとヒト、モノとモノの関係性を変える<br>
+                          -自分が生きていることによるギャップを世の中に生む
+                      </p>
+                    
                       </div><!--mind_txt-->
                         </section><!--mind-->
+                        <section class="Mind">
+                            <div class="Mind_txt">
+                            <h2 class="inline CI_title">Ⅱ. BI</h2><p class="subtitle inline primary_color">MIを達成するにあたって、どんな姿勢・特徴をもって行動するのか</p>
+                            <p class="indent">
+                                -感覚的な自由な発想と論理的な冷静さを持ち合わせたクリエイションを目指す<br>
+                                -誰が触れても心地の良いクリエイションを目指す<br>
+                                -現在を見つめるだけでなく未来まで見つめてデザインに活かす<br>
+                                -歴史をたどる<br>
+                                -時空をいったりきたりする
+                            </p>
+                            </div><!--mind_txt-->
+                              </section><!--mind-->
+                              <section class="Mind">
+                                  <div class="Mind_txt Mind_lasttxt">
+                                  <h2 class="inline CI_title">Ⅲ. VI</h2><p class="subtitle inline primary_color">MIやBIを踏まえた複合的な要素をビジュアルに落とした結果</p>
+                                  <p class="indent"> 上記に記載したMI/BIに基づいてVIを設計しました。<br>
+                                    構成はTypography/Logo/Colorの3要素となっており、それぞれを設計する際に意識した点は下記の通りです。</p>
+
+                                    <div class="indent VI_list">
+                                   <h3 class="inline"> 1. Typography</h3>
+                                   <p class="indent">可読性の高さ・モダンなスタイル・普遍性・思考との親和性</p>
+                                   <h3> 2. Logo</h3>
+                                   <p class="indent">独自性・未来・シンプルなシェイプに対する複雑性</p>
+                                   <h3>  3. Color</h3>
+                                   <p class="indent">フレッシュさ・新鮮さ・バランスの良さ</p>
+                                  </div>
+                                    <p class="indent"> 
+                                    なお、以降にご紹介するVIに基づいて作成したグラフィックもあります。<a href="./project/selfbranding.html" class="url" target="_blank"><br>>>ご興味のある方はこちら</a></p>
+                                  </div><!--mind_txt-->
+                                    </section><!--mind-->
                   <div class="font">
-                    <h2>Typography</h2>
+                    <h3 class="VI_subtitle">1. Typography</h3>
                     <div class="font_txt">
                     <h4><span>欧文フォント</span>Futura<br>
                       <span>和文フォント</span>中ゴシックBBB</h4>
@@ -51,78 +109,101 @@
                     <div class="intention">
                       <h3>intention</h3>
                       <p>
-                      Typographyを学んだ初期の頃に、Futuraが空港でも使用されている理由を知り、その頃からずっとこのフォントに対して思い入れがありました。<br>
-                      セルフブランディングをする際には是非、Futuraをメインフォントとして起用したいと考えており、今回、使用させていただく運びとなりました。<br>
-                      相方となる和文フォントはいくつか候補を挙げたのち、欧文フォントと組み合わて実験しました。<br>
-                      その結果、Futuraの世界観と最も親和性が高いと判断した中ゴシックBBBを使用しております。
+                          まず、フォントを選定する際に、サンセリフ or セリフという段階で、今回は機能性(可読性の高さ)を重視してサンセリフを選定致しました。その次に、サンセリフの中で使いたいフォントを考えました。<br>
+                          Typographyを学んだ初期の頃から、直感的にFuturaが好きだったのですが、一旦他のフォントに対しての選定意義も考えてみようと思い、Futuraの他に候補にあがったのがFrutigerやUniverseです。<br>
+                          <a href="https://blog.petitboys.com/archives/frutiger.html" class="url" target="_blank">Frutigerが空港で使用されている意図</a>は奥深く、Universeの美しさも惹かれるものがありました。しかしながら最終的には「“未来“を意味する名前」を決め手にFuturaを選定しました。<br>
+                          相方となる和文フォントはいくつか候補を挙げたのち、欧文フォントと組み合わて実験しました。その結果、Futuraの世界観と最も親和性が高いと判断した中ゴシックBBBを使用しております。<br>
+                          その他実験したフォントにはFOT-筑紫A丸ゴシック StdやDNP 秀英角ゴシック金 Stdなどがあり、次は源ノ角ゴシックなども実験してみたいです。
                       <!-- また、日本語の漢字かな交じり文の特徴に配慮して、欧文フォントは和文フォントの○倍で指定しており、<br>和文フォント自体は長体(通常の○倍)で設定しております。 --></p>
                       </div><!--intention-->
-                      <div class="style-guide">
-                        <h3>Style Guide<span class="notes"> &nbsp;*only this site</span></h3>
-                        <div class="font-flex">
-                        <div class="style-guide_txt">
-                        <h1>Header level1 </h1>
-                        <h2>Header level2</h2>
-                        <h3>Header level3</h3>
-                        <h4>Header level4</h4>
-                        <p><span class="subtitle">subtitle</span></p>
-                        <p><span class="notes">Notes</span></p>
-                      </div> <!-- style-guide_txt -->
-                      <div class="font-size">
-                        <h1>45px</h1>
-                        <h2>32px</h2>
-                        <h3>28px</h3>
-                        <h4>22px</h4>
-                        <p><span class="subtitle">18px</span></p>
-                        <p><span class="notes">14px</span></p>
-                        </div><!--font-size-->
-                        </div><!--font-flex-->
-         
-                        </div><!--style-guide-->
 
-                  </div><!--font-->
+
+                      <!-- <div class="style-guide">
+                        <h3>Style Guide<span class="notes"> &nbsp;*only this site</span></h3>
+                        
+                        <div class="style-guide_txt">
+
+                            <div class="font-flex">
+                        <h1 class="font-size">H. level1 </h1>
+                        <div><h1 class="inline">56px</h1> <p class="inline">■#fff&nbsp;text-stroke 1px ■#000</p></div>
+                      </div>
+
+                      <div class="font-flex">
+                        <h2 class="font-size">H. level2</h2>
+                        <h2>40px</h2>
+                      </div>
+
+                      <div class="font-flex">
+                        <h3 class="font-size">H. level3</h3>
+                        <h3>28px</h3>
+                      </div>
+
+                      <div class="font-flex">
+                        <h4 class="font-size">H. level4</h4>
+                        <h4>22px</h4>
+                      </div>
+
+                      <div class="font-flex">
+                        <p><span class="subtitle font-size">subtitle</span></p>
+                        <p><span class="subtitle">18px</span></p>
+                      </div>
+
+                      <div class="font-flex">
+                        <p><span class="notes font-size">Notes</span></p>
+                        <p><span class="notes">14px</span></p>
+                      </div>
+
+                      <div class="font-flex">
+                        <a class="url font-size">a</a>
+                        <a class="url">16px</a>
+                      </div>
+
+                      </div> 
+                        </div>
+
+                  </div>-->
+
                   <div class="logo">
-                    <h2>Logo</h2>
+                    <h3 class="VI_subtitle">2. Logo</h3>
                   <img src="img/philosophy/logo.png" class="logo_img">
                   <div class="intention">
                     <h3>intention</h3>
-                    <img src="img/philosophy/logo_exp.png" class="logo_expimg">
+                    
                     <p>
-                    上記のグラフィックはロゴの構成要素を分解して説明したものです。<br>
-                    解説にある通り、このロゴは2つの要素を組み合わせて作っており、私の名前に由来しています。<br>
-                    要素の1つ目は、自分のイニシャルであるAをベースに、スラッシュとバックスラッシュで構成して出来たシェイプです。<br>
-                    2つ目は、先ほどのシェイプと組み合わせると、自身の名前となるようにサインをしたものです。<br>
-                    それぞれの意図などはグラフィック内で説明してありますので、よろしければご覧ください。
-                    </p>
+                        ロゴはMIやBIを体現できるようなシェイプになっています。2つの要素を組み合わせてできており、私の名前に由来しています。<br>
+                        1つ目の要素は、自分のイニシャルであるAをベースに、スラッシュとバックスラッシュで構成して出来たシェイプ。<br>
+                        2つ目は、先ほどのシェイプと組み合わせると、自身の名前となるようにサインをしたものです。意図については口頭でご説明いたします。
+                        </p>
+
                     </div><!--intention-->
                     
                     <div class="intention">
-                        <h3>Changes</h3>
+                        <h3 class="">Changes(ロゴの変遷)</h3>
                         <div class="logo_flex">
                        <div class="logochange_img"><img src="img/philosophy/logo_before.png"><p class="subtitle">2018.09作成</p></div>
-                        <p class="triangle"></p>
+                        <p class="triangle">▶︎</p>
                        <div class="logochange_img"><img src="img/philosophy/logo_after.png"><p class="subtitle">2019.09作成</p></div>
                         </div><!--logo_flex-->
                         <p class="logochange_txt">
                           1番最初は、上記グラフィック(左)のスラッシュとバックスラッシュの組み合わせのシェイプ、単体でロゴとしていました。<br>
-                          その中で、2019年6月中頃「"あのアディダスの3本ラインのロゴ"をEU裁が商標権を認めない」というニュースが物議を醸しました。<br>
-                          このニュースは、"アディダスの3本線は普遍だ"と思っていた自分にとっては、<br>かなり衝撃的な出来事であり、自分のロゴの特徴から考えても、再考を余儀なくされました。<br>
+                          その中で、2019年6月中頃<a href="https://www.afpbb.com/articles/-/3231024" class="url" target="_blank">「"あのアディダスの3本ラインのロゴ"をEU裁が商標権を認めない」というニュース</a>が物議を醸しました。<br>
+                          このニュースは、"アディダスの3本線は普遍だ"と思っていた自分にとっては、"ただの3本線"といって独自性がないと判断されてしまったことはかなり衝撃的な出来事であり、自分のロゴの特徴から考えても、再考を余儀なくされました。<br>
                           そこで、"自分自身を証明する圧倒的な手段はサインなのではないか？"と考え、初期のものと組み合わせたシェイプを最終的なロゴの形と致しました。
                           </p>
                       </div><!--intention-->
                     </div><!--logo-->
 
                     <div class="color">
-                        <h2>Color</h2>
+                        <h3 class="VI_subtitle">3. Color</h3>
                         <div class="color_palette">
                         <div class="primary">
-                          <p><h4>Primary</h4>#ff5736</p>
+                          <p><h4>Sunrise orange</h4>#ff5736</p>
                         </div>
                         <div class="p-light">
-                            <p><h4>Pーlight</h4>#ff8a62</p>
+                            <p><h4>Sーlight</h4>#ff8a62</p>
                           </div>
                           <div class="secondary">
-                              <p><h4>Secondary</h4>#367dff</p>
+                              <p><h4>Silver</h4>#c0c0c0</p>
                           </div>
                           </div><!--color_palette-->
 
@@ -130,11 +211,13 @@
                           <h3>intention</h3>
                           <p>
                           このPortfolio siteを運用するにあたって、Primary colorとSecondary colorを選定いたしました。<br>
-                          Primary colorにはもともと自分自身がイメージカラーとして使用していたオレンジを、Secondary colorにはオレンジの補色であるブルーを選定致しました。<br>
-                          女性的な色味と男性的な色味を組み合わせることによって、<br>ロゴに込めた二律背反の想いや、自分の目指している境界線のない世界を体現したいと思っています。
+                          Primary colorにはもともと自分自身がイメージカラーとして使用していた陽の明かりを彷彿させるようなオレンジを、Secondary colorにはシルバーをイメージしたグレーを選定致しました。<br>
+                          女性的とも男性的とも取れないインパクトのあるオレンジと、上品な印象を与えるシルバーを選出することによって、ロゴに込めた二律背反の想いを表現しています。<br>
+                          なお、Secondary colorであるシルバーについては背景色としての役割を担うことがあるため、文字の可読性を優先し、<span class="c0c0c0">■</span>#c0c0c0から<span class="e6e6e6">■</span>#e6e6e6に変更しております。
                           </p>
                           </div><!--intention-->
-                        </div><!--color-->                    
+                        </div><!--color-->  
+             
                       </div><!--contents-->
                     </div><!--wrapper-->
     </body>

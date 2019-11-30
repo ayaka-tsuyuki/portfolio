@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0,width=device-width">
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="https://use.typekit.net/nng2xhs.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">　
+    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
 <!--中ゴシック--> 
 <script>
     (function(d) {
@@ -20,25 +24,27 @@
 </head>
     <body>
         <div id="wrapper">
-              <div class="header.common">
+   <div class="full">
        <header>
-        <div class="header_flex">   
-    <div> <a href="index.html"><img src="img/top/logo.png"></a></div>
-       <div class="navi">
-        <p> <a href="index.html">Home</a></p>
-        <p><a href="about.html">About</a></p>
-        <p> <a href="philosophy.html">Philosophy</a></p>
-        <p> <a href="project/index.html">Project</a></p>
-       </div><!--navi-->
+        <div class="header_flex top">   
+    <div> <a href="index.html"><img src="img/top/logo.png" class="top"></a></div>
+    <input type="checkbox" id="trigger">
+       <nav class="navi">
+          <label for="trigger">
+              <span>メニュー展開</span>
+              </label>
+        <p> <a href="index.html" class="top top_now">Home</a></p>
+        <p><a href="about.html" class="top">About</a></p>
+        <p> <a href="philosophy.html" class="top">Philosophy</a></p>
+        <p> <a href="project/index.html" class="top">Project</a></p>
+       </nav><!--navi-->
+       <label for="trigger" id="coverlayer">メニュー展開</label>
         </div><!--header_flex-->
-        </div><!--header.common-->
-        </header>
-           </header>
-           <div class="contents">
-            <div class="top_slider">
-            <img src="img/top/businesscard.png">
+      </header>
+        <div class="top_slider">
+             <p> I’m&nbsp;<span>Ayaka Tsuyuki,</span><br> a Creator based in Tokyo.</p>
        </div> <!--top_slider-->
-       </div><!--contents-->
+       </div><!--full-->
            </div><!--wrapper-->
            
     </body>
