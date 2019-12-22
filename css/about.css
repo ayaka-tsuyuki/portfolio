@@ -105,7 +105,7 @@ div#wrapper{
     flex-wrap: wrap;
 }
 
-.skill_flex p span{
+.skill_flex h4 span{
     display: inline-block;
     width: 7rem;
 }
