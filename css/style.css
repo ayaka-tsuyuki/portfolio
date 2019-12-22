@@ -24,7 +24,7 @@ div .contents{
     }
     
 h1{
-    font-size: 56px;
+    font-size: 3.2rem;
     color: #fff;
     -webkit-text-stroke: 1px #000;
     /*ベンダープレフィックス for chrome,safari*/
@@ -384,6 +384,7 @@ default*/
 }
 
 label#coverlayer{
+    display: block;
 	background-color: rgba(0,0,0,0.7);
 	position: fixed;
 	top: 0;
@@ -432,7 +433,7 @@ p.nav_now{
         
         .navi{
             width: 50%;
-          
+            z-index: 400;
             display: block;
             /* width:max-content; */
             position: fixed;
@@ -459,6 +460,7 @@ p.nav_now{
     }
     
     label#coverlayer{
+        display: block;
         background-color: rgba(0,0,0,0.7);
         position: fixed;
         top: 0;
