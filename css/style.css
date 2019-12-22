@@ -6,7 +6,7 @@ div#wrapper{
  margin:auto;
 }
 
-div .contents{
+div.contents{
     box-sizing: border-box;
     width: 100%;
     max-width: 1140px;
@@ -249,7 +249,7 @@ input:checked + nav{
     text-decoration: none;
     color: #000;
 }
-/*width:0にしておいてhoverしたときにactionかける*/
+/*width:0にしておいてhoverしたときにwidth:100にする*/
 .navi a:after{
     content: '';
 	width: 0;
@@ -343,6 +343,7 @@ default*/
  /* Medium devices (tablets, 768px and up) */
  @media (min-width: 768px) and (max-width: 991.98px)  { 
     div.contents{
+        margin-top: 8%;
         max-width: 720px;
     }
  }
