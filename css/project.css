@@ -70,10 +70,7 @@ position: relative;
 
 .project_slide{
     margin-top: 5%;
-    padding-top: 3%;
-    padding-bottom:3% ;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 3%;
     box-sizing: border-box;
     background-color:#e6e6e6;
 }
