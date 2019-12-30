@@ -18,7 +18,7 @@
 
 .Mind{
     margin-top: 1rem;
-	display: block;
+    display: block;
     /*センタリングしたい*/
 }
 
@@ -144,58 +144,18 @@ div.intention .logo_expimg{
   }
 
 .color {
-    margin-top: 5%;
-}
-.color_palette{
     width: 100%;
-    margin: 1rem;
- margin-top: 3%;
- display: flex;
- flex-wrap: wrap;
+    margin-top: 5%;
 }
 
 .primary{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 3rem;
+    padding: 1rem;
     box-sizing: border-box;
-    width: 40%;
-    height: auto;
+    width: 16vw;
+    height: 16vw;
     background-color: #ff5736;
-    margin-top: 0px;
-    white-space: nowrap;
-}
-
-.p-light{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 3rem;
-    box-sizing: border-box;
-    width:30%;
-    height: auto;
-    background-color: #ff8a62;
-    margin-top: 0px;
-    white-space: nowrap;
-}
-
-.secondary{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 3rem;
-    box-sizing: border-box;
-    width:30%;
-    height: auto;
-    background-color:#e6e6e6;
-    margin-top: 0px;
-    white-space: nowrap;
-}
-
-span.c0c0c0{
-    color: #c0c0c0;
-}
-
-span.e6e6e6{
-    color: #e6e6e6;
+    color: #fff;
+    margin: 0 auto;
 }
 
 /* Extra large devices (large desktops, 1200px and up) 
@@ -212,6 +172,12 @@ default*/
     .whatisCI{
         width: 180px;
         height: 180px;}
+
+        .primary{
+            width: 28vw;
+            height: 28vw;
+        }
+
  }
 
  /* Small devices (landscape phones, 576px and up) */
@@ -223,6 +189,10 @@ default*/
     .logo .logo_img{
         width: 100%;
     }      
+    .primary{
+        width: 28vw;
+        height: 28vw;
+    }
   }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -240,23 +210,12 @@ default*/
     }
 
     .primary{
-        margin-right: calc(16px + 1rem);
         padding-bottom: 2rem;
-        width: 100%;
+        width: 50vw;
+        height: 50vw;
+    }
 
-    }
-    .p-light{
-        margin-right: calc(16px + 1rem);
-        padding-bottom: 2rem;
-        width: 100%;
-    }
-    
-    .secondary{
-        margin-right: calc(16px + 1rem);
-        padding-bottom: 2rem;
-        width: 100%;
 
-    }
     div.intention{
         margin-top:5%;
         padding-left: 0rem;
@@ -279,6 +238,5 @@ default*/
     flex-direction: column;
 
 }
-
 
 }
