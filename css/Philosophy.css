@@ -39,6 +39,10 @@
     margin-bottom: 1rem;
 }
 
+.Mind_txt--detail{
+margin-top: 0px;
+}
+
 .Mind_lasttxt{
     border-bottom: none;
 }
@@ -116,6 +120,7 @@ div.intention .logo_expimg{
       align-items: flex-start;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
   }
   .logochange_img {
     width: 45%;
@@ -197,12 +202,21 @@ default*/
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
-.CI_flexitem{
-    margin: 0 auto;
 
-}
+
     .logo .logo_img{
         width: 100%;
+    }
+
+    .logochange_img {
+        width: 100%;
+      }
+
+      p.triangle {
+        margin: 0 auto;
+        width: 10%;
+        transform: rotate(90deg);
+        font-size: 14vw;
     }
 
     .VI_list{
@@ -222,21 +236,13 @@ default*/
         padding-right: 0rem;
     }
 
-    p.triangle {
-        font-size: 8vw;
-    }
 
 .style-guide{
     margin-left:0rem;  
     margin-right: calc(16px + 1rem);
 }
 
-.font-flex{
-    padding: 1rem 1.5rem;
-}
-.CI_flex{
-    flex-direction: column;
 
-}
+
 
 }

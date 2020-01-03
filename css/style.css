@@ -59,7 +59,7 @@ h4{
 
 span.notes{
     font-size:14px ;
-    color: #ff8a62;
+    color: #262626;
     font-weight: 700;
 }
 
@@ -426,9 +426,12 @@ p.nav_now{
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+h1{
+    font-size: 2.6rem;
+}
 
     div .contents{
-        margin-top: 15%;
+        margin-top: 18%;
         margin-bottom: 10%;
         }
         input:checked + nav + label#coverlayer{
