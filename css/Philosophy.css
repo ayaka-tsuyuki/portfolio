@@ -52,13 +52,14 @@ margin-top: 0px;
 
 }
 .VI_list{
-    margin-top: 3%;
+    margin: 0 auto;
+    margin-top: 5%;
     margin-bottom: 3%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: max-content;
-    border-top:2px solid #ff5736;
-    border-bottom: 2px solid #ff5736;
+    border-top:3px solid #ff5736;
+    border-bottom:3px solid #ff5736;
 }
 
 .VI_list h3{
@@ -68,13 +69,18 @@ margin-top: 0px;
     margin-top:0;
 }
 
-.font .font_txt h4{
-    padding-left: 1rem;
+.font .font_txt {
     margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.font_txt h4 span{
+
+.font .font_txt h3{
+}
+.font_txt h3 span{
     display: inline-block;/*忘れない*/
-    width: 10rem;
+    width: 12rem;
 }
 
 div.intention{
@@ -95,8 +101,8 @@ div.intention p{
 }
 
 .logo .logo_img{
+    margin: 0 auto;
     margin-top: 3%;
-    padding-left: 2rem;
     box-sizing: border-box;
     width: 50%;
     display: block;
@@ -154,10 +160,10 @@ div.intention .logo_expimg{
 }
 
 .primary{
-    padding: 1rem;
+    padding: 2rem;
     box-sizing: border-box;
-    width: 16vw;
-    height: 16vw;
+    width: 28vw;
+    height: 28vw;
     background-color: #ff5736;
     color: #fff;
     margin: 0 auto;
@@ -176,12 +182,18 @@ default*/
  @media (min-width: 768px) and (max-width: 991.98px)  { 
     .whatisCI{
         width: 180px;
-        height: 180px;}
+        height: 180px;
+    }
 
-        .primary{
-            width: 28vw;
-            height: 28vw;
-        }
+    .logo .logo_img{
+        width: 80%;
+    }  
+
+    .primary{
+        width: 28vw;
+        height: 28vw;
+        padding: 1.2rem;
+    }
 
  }
 
@@ -197,7 +209,9 @@ default*/
     .primary{
         width: 28vw;
         height: 28vw;
+        padding: 1.2rem;
     }
+
   }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -224,7 +238,8 @@ default*/
     }
 
     .primary{
-        padding-bottom: 2rem;
+        margin-top: 1rem;
+        padding: 1.2rem;
         width: 50vw;
         height: 50vw;
     }
@@ -242,7 +257,18 @@ default*/
     margin-right: calc(16px + 1rem);
 }
 
+.font .font_txt h3{
+    font-size: 22px;
+}
 
-
+.font_txt h3 span{
+    width: 10rem;
+}
+.VI_list{
+    margin-top: 10%;
+}
+.font .font_txt h3{
+    margin-top: 8%;
+}
 
 }

@@ -6,19 +6,29 @@ div.project{
 }
 
 .project_flex{
+    width: 100%;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .project_flexitem{
-width:calc(100%/4);
-box-sizing: border-box;
-flex-wrap:wrap;
-align-self: stretch;
-padding: 1%;
-position: relative;
+    width:calc(100%/4 - 1%);
+    box-sizing: border-box;
+    flex-wrap:wrap;
+    align-self: stretch;
+    position: relative;
+    margin-left: 1%;
+}
+
+.project_flexitem:nth-child(4n + 1){
+    margin-left: 0;
+}
+
+.project_flexitem:nth-child(n + 5){
+    margin-top: 1%;
 }
 
 .project_flexitem img{
@@ -115,7 +125,8 @@ position: relative;
     padding: 0;
 }
 .project-slide__3column__insta__item .viewsite{
-    padding: 0 0.5rem;
+    padding: 0.5rem;
+    font-size: 14px;
 }
 
 .project_CPS{
@@ -259,14 +270,21 @@ footer.project_button a.url:hover{
 
 /*some item-width__50%*/
 .item-width50{
-width: 100%;
+    margin: 0 auto;
+    width: 100%;
 }
-
+.item-width50__item p{
+    margin: 0 auto;
+    display: block;
+    width: calc(50% - 16px);
+}
 .item-width50__item img{
     display: block;
     width: calc(50% - 16px);
-    margin: 0;
+
 }
+
+
 
 /* Extra large devices (large desktops, 1200px and up) 
 default*/
@@ -275,8 +293,21 @@ default*/
  /* Large devices (desktops, 992px and up) */
  @media (min-width: 992px) and (max-width: 1199.98px)  { 
     .project_flexitem{
-        width:calc(100%/3);
+        width:calc(100%/3 - 1%);
+        margin-left: 1%;
         }
+
+        .project_flexitem:nth-child(n + 4){
+            margin-top: 1%;
+        }
+        .project_flexitem:nth-child(4n + 1){
+            margin-left: 1%;
+        }
+
+        .project_flexitem:nth-child(3n + 1){
+            margin-left: 0;
+        }
+
         .project_slide img{
             width: 100%;
         }
@@ -302,8 +333,16 @@ default*/
  /* Medium devices (tablets, 768px and up) */
  @media (min-width: 768px) and (max-width: 991.98px)  { 
     .project_flexitem{
-        width:calc(100%/2);
+        width:calc(100%/2 - 1%);
+        margin-left: 1%;
+    }
     
+        .project_flexitem:nth-child(n + 3){
+            margin-top: 1%;
+        }
+
+        .project_flexitem:nth-child(2n + 1){
+            margin-left: 0;
         }
 
         .project_slide img{
@@ -333,44 +372,51 @@ default*/
             width: calc(100%/3);
         }
 
- }
+    }
 
  /* Small devices (landscape phones, 576px and up) */
  @media (min-width: 576px) and (max-width: 767.98px) { 
     .project_flexitem{
         width:100%;
-        padding: 3%;
-        }
+        margin-left: 0;
+    }
 
-        .project_slide img{
-            width: 100%;
-        }
+    .project_flexitem:nth-child(n + 2){
+        margin-top: 3%;
+    }    
 
-        .project-slide__3column img{
-            width: calc(100%/3);
-        }
+    .project_slide img{
+        width: 100%;
+    }
 
-        .project-slide__3column{
-            width: 100%;
-        }
-        .item-width50__item img{
-            width: calc(50% - 16px);
-        }
+    .project-slide__3column img{
+        width: calc(100%/3);
+    }
 
-        .project-slide__3column__insta{
-            width: 100%;
-        }
-        .project-slide__3column__insta__item{
-            width: calc(100%/3);
-        }
-  }
+    .project-slide__3column{
+        width: 100%;
+    }
+    .item-width50__item img{
+        width: calc(50% - 16px);
+    }
+
+    .project-slide__3column__insta{
+        width: 100%;
+    }
+    .project-slide__3column__insta__item{
+        width: calc(100%/3);
+    }
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
     .project_flexitem{
         width:100%;
-        padding: 3%;
+        margin-left: 0;
         }
+    .project_flexitem:nth-child(n + 2){
+        margin-top: 3%;
+    }    
 
         .project_slide img{
             width: 100%;
@@ -412,6 +458,9 @@ default*/
         }
         .project_slide{
             margin-top: 2rem;
+        }
+        .item-width50__item p{
+            width: 100%;
         }
         .item-width50__item img{
             width: 100%;
