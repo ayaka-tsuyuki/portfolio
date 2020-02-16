@@ -4,6 +4,17 @@ div#wrapper{
     font-style: normal;   
 }
 
+.second-Paragraph{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blue-line{
+    content: "";
+    display: block;
+    border: 1px solid #367dff;
+}
+
 .Profile{
     width: 100%;
     margin:0 auto;
@@ -21,7 +32,7 @@ div#wrapper{
     width: 80%;
 }
 .about_txt{
-    width: 50%;/*本来40%で揃うはずなのにできない*/
+    width: 50%;
 }
 
 .about_txt h1{
@@ -37,39 +48,59 @@ div#wrapper{
 }
 
 
-.Profile span{
+.profile_title{
     display: inline-block;
     width: 8rem;
 }
 
 .biography{
     margin-top:3%;
-    border-top: #ff5736 2px solid;
-    padding-top: 1rem;
 }
 
 .biography h2{
-
     margin: 0 auto;
 }
 
-/*indentで統一*/
-
-
-.experience_skill{
-    margin-top: 5%;
+.biography-detail{
+    display: block;
+    margin: 30px auto auto;
+    background-color:#e6e6e6;
+    padding: 10px;
+    color: #585757;
+    font-weight: 600;
 }
 
-.experience_skill h1{
-
-    font-size: 22px;
+.biography-detail__item{
+    display: block;
+    margin-top: 5px;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #585757;
 }
 
-.experience_skill p{
-    font-size: 18px;
+.biography-detail__number{
+    background-color: #367dff;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.biography-detail__etc{
+    display: block;
+    text-align: right;
+    font-size: 1.4rem;
+    color: #585757;
 }
 
-.experience_skill .experience p span{
+.experience{
+    margin-top: 2rem;
+}
+.experience_flex-item{
+    margin: 5px;
+    font-size: 15px;
+}
+
+.experience_flex-item-inner{
     padding-left:1rem;
     padding-right: 1rem;
     background-color: #ff5736;
@@ -83,26 +114,26 @@ div#wrapper{
 }
 
 .experience .experience_flex{
-    padding-right: 20%;
-   
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
 }
-.experience .experience_flex p{
-    padding-left: 1rem;
-}
-.experience_skill .skill{
-    margin-top: 5%;
+
+.skill{
+    margin-top:10%;
 }
 
-.experience_skill .skill p{
+.skill p{
     margin-top: 0.2rem;   
     font-size: 18px;
 
 }
-.experience_skill .skill .skill_flex{
+.skill .skill_flex{
+    margin-top: 1%;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 .skill_flex h4 span{
@@ -111,16 +142,98 @@ div#wrapper{
 }
 
 .skill .skill_flex .design{
-    width: 50%;
+    margin-right: 5%;
 }
 
 .skill .skill_flex .technology{
-    width: 50%;
+    margin-left: 5%;
 }
 
 .star{
     color: #ff5736;
 }
+
+/*bio list*/
+.biography-list{
+    list-style: none;
+}
+.biography-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #367dff; 
+    padding-top: 0.5rem ;
+    padding-bottom: 0.5rem;
+}
+.biography-item-main{
+    font-weight: 700;
+}
+.biography-item-speciality{
+    display: block;
+    font-size: 14px;
+    color: #585757;
+}
+.biography-item-priod{
+    color:#ff5736;
+    font-weight: 700;
+}
+
+
+/*read more*/
+.grad-wrap{
+    position: relative;
+}
+ .grad-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(150%);
+    z-index: 2;
+    margin: auto;
+    width: max-content;
+    min-width: 120px;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    background: #367dff;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  }
+  .grad-btn::before {
+    content: "Read more"
+  }
+  .grad-item {
+    position: relative;
+    overflow: hidden;
+    height: 10vh; /*隠した状態の高さ*/
+  }
+  .grad-item::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh; /*グラデーションで隠す高さ*/
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+    content: "";
+  }
+  .grad-trigger {
+    display: none; /*チェックボックスは常に非表示*/
+  }
+  .grad-trigger:checked ~ .grad-btn::before {
+    content: "Close" /*チェックされていたら、文言を変更する*/
+  }
+  .grad-trigger:checked ~ .grad-item {
+    height: auto; /*チェックされていたら、高さを戻す*/
+  }
+  .grad-trigger:checked ~ .grad-item::before {
+    display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/
+  }
 
 /* Extra large devices (large desktops, 1200px and up) 
 default*/
@@ -140,11 +253,20 @@ default*/
         margin: 0 auto;
         width: 60%;
     }
-
+    .skill{
+        margin-top: 15%;
+    }
     .about_txt{
         width: 100%;
         margin-top: 3%;
     }
+    .second-Paragraph{
+        width: 100%;
+    }
+    .grad-wrap{
+       margin-top: 3%;
+    }
+
  }
 
  /* Small devices (landscape phones, 576px and up) */
@@ -162,7 +284,24 @@ default*/
     .experience .experience_flex{
         padding-right: 0%;
     }
-
+    .second-Paragraph{
+        width: 100%;
+    }
+    .skill .skill_flex .design{
+        margin-right: 0;
+        width: 50%;
+    }
+    
+    .skill .skill_flex .technology{
+        margin-left: 0;
+        width: 50%;
+    }
+    .grad-wrap{
+        margin-top: 3%;
+     }
+     .skill{
+        margin-top: 20%;
+    }
 
   }
 
@@ -185,13 +324,32 @@ default*/
     }
 
     .skill .skill_flex .design{
-        width: 100%;
+        width: auto;
+        margin-right: 0;
         margin-top: 1rem;
     }
     
     .skill .skill_flex .technology{
-        width: 100%;
-        margin-top: 1rem;
+        width: auto;
+        margin-left: 0;
+        margin-top: 8%;
     }
+    .second-Paragraph{
+        width: 100%;
+    }
+    .grad-wrap{
+        margin-top: 3%;
+     }
 
+     .biography{
+        margin-top: 2rem;
+     }
+
+     .biography-item{
+        display: block;
+    }
+    .skill{
+        margin-top: 30%;
+    }
  }
+

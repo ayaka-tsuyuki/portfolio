@@ -1,52 +1,191 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0,width=device-width">
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet" href="https://use.typekit.net/nng2xhs.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">　
-    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
-<!--中ゴシック--> 
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,width=device-width">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="https://use.typekit.net/nng2xhs.css">
+<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">　
+<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+<!--中ゴシック-->
 <script>
-    (function(d) {
-      var config = {
-        kitId: 'gqy6plv',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
-    <title>Portfolio｜露木 彩花 Ayaka Tsuyuki</title>
-</head>
-    <body>
-        <div id="wrapper">
-   <div class="full">
-       <header>
-        <div class="header_flex top">   
-    <div> <a href="index.html"><img src="img/top/logo.png" class="top"></a></div>
-    <input type="checkbox" id="trigger">
-       <nav class="navi">
+  (function (d) {
+    var config = {
+      kitId: 'gqy6plv',
+      scriptTimeout: 3000,
+      async: true
+    },
+      h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+  })(document);
+</script>
+<title>About｜露木 彩花 Ayaka Tsuyuki</title>
+
+<body>
+  <div id="wrapper">
+
+    <header class="color">
+      <div class="header_flex">
+        <div> <a href="index.html"><img src="img/top/logo.png"></a></div>
+        <input type="checkbox" id="trigger">
+        <nav class="navi">
           <label for="trigger">
-              <span>メニュー展開</span>
-              </label>
-        <p> <a href="index.html" class="top top_now">Home</a></p>
-        <p><a href="about.html" class="top">About</a></p>
-        <p> <a href="philosophy.html" class="top">Philosophy</a></p>
-        <p> <a href="project/index.html" class="top">Project</a></p>
-       </nav><!--navi-->
-       <label for="trigger" id="coverlayer">メニュー展開</label>
-        </div><!--header_flex-->
-      </header>
-        <div class="top_slider">
-             <p> I’m&nbsp;<span>Ayaka Tsuyuki,</span><br> a Creator based in Tokyo.</p>
-       </div> <!--top_slider-->
-       </div><!--full-->
-           </div><!--wrapper-->
-           
-    </body>
+            <span>メニュー展開</span>
+          </label>
+          <p class="nav_now"><a href="index.html">About</a></p>
+          <p> <a href="project/index.html">Project</a></p>
+        </nav>
+        <!--navi-->
+        <label for="trigger" id="coverlayer">メニュー展開</label>
+      </div>
+      <!--header_flex-->
+    </header>
+    <div class="contents">
+      <h1>About</h1>
+      <section class="contents_margin-top">
+        <div class="Profile">
+          <div class="Profile_img"><img src="img/about/portrait.jpg"></div>
+          <div class="about_txt">
+            <div class="profile_txt">
+              <h2>Profile</h2>
+              <h4 class="indent">
+                <span class="subtitle profile_title">Name</span>Ayaka Tsuyuki<br>
+                <span class="subtitle profile_title">Birthday</span>February 1995<br>
+                <span class="subtitle profile_title">Specialty</span>Design<br>
+                <span class="subtitle profile_title">Base</span>Tokyo, Japan
+              </h4>
+            </div>
+            <div class="blue-line"></div>
+            <div class="experience">
+              <h2>Experience</h2>
+              <div class="experience_flex">
+                <p class="experience_flex-item"><span class="experience_flex-item-inner">WEBデザイン</span></p>
+                <p class="experience_flex-item"><span class="experience_flex-item-inner">グラフィックデザイン</span></p>
+                <p class="experience_flex-item"><span class="experience_flex-item-inner">UIUXデザイン</span></p>
+                <p class="experience_flex-item"><span class="experience_flex-item-inner">フロントエンジニアリング</span></p>
+                <p class="experience_flex-item"><span class="experience_flex-item-inner">ディレクション</span></p>
+                <p class="experience_flex-item"><span class="experience_flex-item-inner">タイポグラフィ</span></p>
+                <p class="experience_flex-item"><span class="experience_flex-item-inner">コンテンツ制作</span></p>
+                <p class="experience_flex-item"><span class="experience_flex-item-inner">チームビルディング</span></p>
+              </div>
+              <!--experience_flex-->
+            </div>
+            <!--experience-->
+
+          </div>
+          <!--about_txt-->
+        </div>
+        <!--Profile-->
+      </section>
+      <!--introduction-->
+      <section class="second-Paragraph">
+        <div class="biography">
+          <h2>Biography</h2>
+          <ul class="biography-list indent">
+            <li class="biography-item">
+              <div>
+                <span class="biography-item-main">専修大学</span>
+                <span class="biography-item-speciality">国際経済学科</span>
+              </div>
+              <span class="biography-item-priod">2013/4-2017/3</span>
+            </li>
+            <li class="biography-item">
+              <div>
+                <span class="biography-item-main">伊藤忠テクノソリューションズ株式会社</span>
+                <span class="biography-item-speciality">流通エンタープライズ事業部 営業</span>
+              </div>
+              <span class="biography-item-priod">2017/4-2018/6</span>
+            </li>
+            <li class="biography-item">
+              <div>
+                <span class="biography-item-main">東京デザインプレックス研究所</span>
+                <span class="biography-item-speciality">WEBクリエイティブ</span>
+              </div>
+              <span class="biography-item-priod">2018/1-2018/9</span>
+            </li>
+            <li class="biography-item">
+              <div>
+                <span class="biography-item-main">トレスイノベーション株式会社</span>
+                <span class="biography-item-speciality">デザイナー,ディレクター,フロントエンドエンジニア</span>
+              </div>
+              <span class="biography-item-priod">2018/9-2020/2</span>
+            </li>
+          </ul>
+          <div class="grad-wrap">
+            <input id="trigger1" class="grad-trigger" type="checkbox">
+            <label class="grad-btn" for="trigger1"></label>
+            <div class="grad-item">
+              <p class="indent">
+                2017年4月、新卒で
+                <a href="https://www.ctc-g.co.jp/" class="url" target="_blank">商社系IT企業</a>に就職。技術志望であったが営業配属となる。<br>
+                1年2ヶ月間、提案型営業として
+                <a href="https://www.ana.co.jp/" class="url" target="_blank">空輸会社</a>のデジタルトランスフォーメーションにおけるサポートをした。<br>
+                <br>
+                前職に従事中、入社時から持ち続けていた“技術職になる目標“を達成するため、
+                <a href="https://www.tokyo-designplex.com/" class="url" target=“_blank”>WEBデザインの学校</a>に通う。<br>
+                その学校で制作した<a href="http://tokyo-d-plex.com/~1801mt_tsuyuki/last_wine2/" class="url"
+                  target=“_blank”>アウトプット</a>をもって2018年9月に現職へ。<br>
+                <br>
+                その後、下記のいくつかの案件を通じて複数のポジション経験している。 </p>
+              <div class="biography-detail">
+                <div class="biography-detail__item">
+                  <span class="biography-detail__number">1</span>
+                  広告代理店を挟んだ<a href="https://www.wan55.co.jp/" class="url" target=“_blank”>WEB制作会社</a>のディレクション
+                </div>
+                <div class="biography-detail__item">
+                  <span class="biography-detail__number">2</span>
+                  <a href="https://tresinnovation.co.jp/" class="url" target=“_blank”>所属会社</a>でのブランディング
+                </div>
+                <div class="biography-detail__item">
+                  <span class="biography-detail__number">3</span>
+                  <a href="https://www.natural-s.jp/index.html" class="url" target="_blank">敏感肌向け化粧品会社</a>でのデザインコーディング
+                </div>
+                <div class="biography-detail__item">
+                  <span class="biography-detail__number">4</span>
+                  <a href="https://www.4cast.co.jp/" class="url" target="_blank">テレビ業界WEB制作会社</a>でのフロントエンド開発
+                </div>
+                <span class="biography-detail__etc">etc…</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--biography -->
+
+        <div class="skill">
+          <h2>Technical Skill</h2>
+          <div class="skill_flex">
+            <div class="design">
+              <h4 class="subtitle"> Design</h4>
+              <h4 class="indent">
+                <span>Photoshop</span><span class="star">★★★★☆</span><br>
+                <span>Illustorator</span><span class="star">★★★☆☆</span><br>
+                <span>XD</span><span class="star">★★☆☆☆</span><br>
+                <span>Dimention</span><span class="star">★★☆☆☆</span><br>
+                <span>Premire Pro</span><span class="star">★★☆☆☆</span>
+              </h4>
+            </div>
+            <!--design-->
+            <div class="technology">
+              <h4 class="subtitle"> Technology</h4>
+              <h4 class="indent">
+                <span>HTML5</span><span class="star">★★★★☆</span><br>
+                <span>CSS3</span><span class="star">★★★☆☆</span><br>
+                <span>Git/Github</span><span class="star">★★★☆☆</span><br>
+                <span>SCSS</span><span class="star">★★★☆☆</span><br>
+                <span>JavaScript</span><span class="star">★★☆☆☆</span>
+              </h4>
+            </div>
+            <!--technology-->
+          </div>
+          <!--skill_flex-->
+        </div>
+        <!--skill-->
+      </section>
+    </div>
+    <!--contents-->
+  </div>
+  <!--wrapper-->
+</body>
 
 </html>
