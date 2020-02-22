@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/*project list*/
+
 .contents.contents-project{
     margin-top: 3%;
 }
@@ -77,6 +79,7 @@ div.project{
     display: block;
     font-size: 12px;
 }
+
 .project__flexitem-role{
     width: max-content;
     margin-top: 0.5rem;
@@ -91,6 +94,8 @@ div.project{
     white-space: nowrap;
 }
 
+
+/*each project*/
 .project-MV{
     display: block;
     width: 100%;
@@ -108,6 +113,68 @@ div.project{
     display: block;
     width: 100%;
 }
+
+.project-information{
+    display: flex;
+}
+
+.project-information__detail{
+    width: 50%;
+    margin: 3% auto 0 auto; 
+}
+.project-information__title{
+    width: 50%;
+}
+
+.project-information__date,.project-information__client,.project-information__role{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    line-height: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.project-information__date-title,.project-information__client-title,.project-information__role-title{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.project-information__date-title,.project-information__client-title,.project-information__role-title{
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 1.5rem;
+    white-space: nowrap;
+    color: #797979;
+}
+
+.project-information__date-main,.project-information__client-main,.project-information__role-main{
+    display: block;
+    font-size: 1.2rem;
+}
+.project-information__client-main{
+    margin-bottom: 0.5rem;
+}
+
+.project-information__client-url{
+    margin-top: 0.5rem;
+    display: block;
+}
+
+.project-introduction{
+    margin: 15px auto 0 auto;
+}
+
+.project-introduction__summary{
+    display: block;
+    margin: 0 auto 30px 0;
+    width: 48%;
+}
+
 
 .project_slide{
     margin-top: 3%;
@@ -160,20 +227,6 @@ div.project{
 .project-slide__3column__insta__item .viewsite{
     padding: 0.5rem;
     font-size: 14px;
-}
-
-.project_CPS{
-    margin-top: 3%;
-}
-
-.project_CPS h3{
-    display: inline-block;
-    width: 10rem;
-    margin-bottom: 0.5rem;  
-}
-
-.project_CPS h4{
-    display: inline-block; 
 }
 
 .tres_styleguide{
@@ -413,6 +466,7 @@ default*/
 
  /* Small devices (landscape phones, 576px and up) */
  @media (min-width: 576px) and (max-width: 767.98px) { 
+
     .project-MV{
         margin-top: 8%;
     }
@@ -446,6 +500,14 @@ default*/
     .project-slide__3column__insta__item{
         width: calc(100%/3);
     }
+
+    .project-title{
+        width: 100%;
+    }
+    
+    .project-sub-title{
+        width: 100%;
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -472,22 +534,7 @@ default*/
 
         .project-slide__3column img{
             width: calc(100%/3);
-        }
-         
-        .project_CPS{
-            margin-top: 2rem;
-            margin-bottom: 3rem;
-        }
-        
-        .project_CPS h3{
-            display: block;
-            width: auto;
-        }
-        
-        .project_CPS h4{
-            display: block; 
-            padding-left: 1rem;
-        }
+        }        
 
         div.tres_sitemap img{
             height: auto;
@@ -521,6 +568,15 @@ default*/
         }
         .project-slide__3column__insta__item{
             width: calc(100%/2);
+        }
+
+        .project-title{
+            width: 100%;
+        }
+        
+        .project-sub-title{
+            width: 100%;
+            margin-top: 1rem;
         }
  }
 
