@@ -340,8 +340,8 @@ default*/
     div.contents{
         margin-top: 8%;
         max-width: 720px;
-        padding-right: 8px;
-        padding-left: 8px;
+        padding-right: 16px;
+        padding-left: 16px;
     }
  }
 
@@ -351,8 +351,8 @@ default*/
         max-width: 540px;
         margin-top: 10%;
         margin-bottom: 10%;
-        padding-right: 8px;
-        padding-left: 8px;
+        padding-right: 16px;
+        padding-left: 16px;
     }
     input:checked + nav + label#coverlayer{
         width: 100vw;
@@ -430,28 +430,29 @@ h1{
     font-size: 2.6rem;
 }
 
-    div .contents{
-        margin-top: 18%;
-        margin-bottom: 10%;
-        padding: 0 8px;
-        }
-        input:checked + nav + label#coverlayer{
-            width: 100vw;
-        }
-        
-        .navi{
-            width: 50%;
-            z-index: 400;
-            display: block;
-            /* width:max-content; */
-            position: fixed;
-            top: 0;
-            right: -50%;
-            bottom: 0;
-            left: auto;
-            transition-duration: 1000ms;
-            background-color: #262626;
-        }
+div .contents{
+    margin-top: 18%;
+    margin-bottom: 10%;
+    padding: 0 16px;
+    }
+    
+    input:checked + nav + label#coverlayer{
+        width: 100vw;
+    }
+    
+    .navi{
+        width: 50%;
+        z-index: 400;
+        display: block;
+        /* width:max-content; */
+        position: fixed;
+        top: 0;
+        right: -50%;
+        bottom: 0;
+        left: auto;
+        transition-duration: 1000ms;
+        background-color: #262626;
+    }
 
     /*ハンバーガー*/
     .navi label{

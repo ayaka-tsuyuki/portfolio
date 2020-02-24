@@ -203,6 +203,10 @@ div#wrapper{
     transition: 0.2s ease;
     box-shadow: 0 0 3px rgba(0,0,0,0.3);
   }
+  .grad-btn:hover{
+      opacity: 0.6;
+  }
+
   .grad-btn::before {
     content: "Read more"
   }
