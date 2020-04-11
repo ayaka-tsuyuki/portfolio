@@ -2,16 +2,10 @@
 
 /*project list*/
 
-.contents.contents-project{
-    margin-top: 3%;
-}
-
-div.project{
-    margin-top: 3%;
-}
 
 .project_flex{
     width: 100%;
+    margin-top: 3%;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -543,7 +537,11 @@ footer.project_button a.url:hover{
 
 /* Extra large devices (large desktops, 1200px and up) 
 default*/
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) { 
+    .contents.project{
+        max-width: 83%;
+    }
+}
 
  /* Large devices (desktops, 992px and up) */
  @media (min-width: 992px) and (max-width: 1199.98px)  { 
