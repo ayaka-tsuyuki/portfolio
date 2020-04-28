@@ -1,515 +1,502 @@
 @charset "UTF-8";
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-div#wrapper{
- font-family: 'futura-pt','a-otf-gothic-bbb-pr6n',sans-serif;
- box-sizing: border-box;
- margin:auto;
-}
-
-div.contents{
-    width: 100%;
-    max-width: 1140px;
-    box-sizing: border-box;
-    margin-top: 5%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 5%;
-    color: #1b1b1b;
-    }
-    
-    .contents_margin-top{
-        margin-top: 3%;
-    }
-    
-h1{
-    font-size: 3.2rem;
-    color: #ff5736;
-    margin-top: 0px;
-    margin-bottom: 0px;
+div#wrapper {
+  font-family: "futura-pt", "a-otf-gothic-bbb-pr6n", sans-serif;
+  box-sizing: border-box;
+  margin: auto;
 }
 
-h2{
-    font-size: 40px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-
+div.contents {
+  width: 100%;
+  max-width: 1140px;
+  box-sizing: border-box;
+  margin-top: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5%;
+  color: #1b1b1b;
 }
 
-h3{
-    font-size: 28px; 
-    margin-top: 0px;
-    margin-bottom: 1rem;  
-}
-h4{
-    font-size: 22px;
-    font-weight: 400;
-    margin-top: 0px;
-    margin-bottom: 0px;
+.contents_margin-top {
+  margin-top: 3%;
 }
 
-.subtitle{
-    padding-left: 0px;
-    font-weight: 700;
+h1 {
+  font-size: 3.2rem;
+  color: #ff5736;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-span.notes{
-    font-size:14px ;
-    color: #262626;
-    font-weight: 700;
+h2 {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-a.url{
-    color: #367dff;
-    text-decoration: none;
-    font-size: 16px;
+h3 {
+  font-size: 28px;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+h4 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.indent{
-    padding-left: 1rem;
-    padding-right: 1rem;
+.subtitle {
+  padding-left: 0px;
+  font-weight: 700;
 }
 
-.inline{
-    display: inline-block;
-    vertical-align: middle;
+span.notes {
+  font-size: 14px;
+  color: #262626;
+  font-weight: 700;
 }
 
-.primary_color{
-    color: #ff5736;
+a.url {
+  color: #367dff;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-header{
- margin-top: 0px;
- padding-top: 0px;
- height: max-content;
- position: fixed;
- top: 0;
- right: 0;
- bottom: 0px;
- left: 0;
- z-index: 10;
+.indent {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.header_flex{
-    width: 100%;
-    height: 80px;
-    margin-top: 0px;
-    padding-left: 16px;
-    padding-right: 16px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;/*各アイテムの均等配置、最初のアイテムは先頭・最後のアイテムは末尾*/
-    align-items: center;
-    background-color: #fff;
-    border-bottom:2px solid #e6e6e6;
+.inline {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-div.top{
-background: transparent;
-color: #fff;
-border-bottom:none;
+.primary_color {
+  color: #ff5736;
 }
 
-.header_flex a img{
-display: block;
-width: 100px;
-height:auto;
-
+header {
+  margin-top: 0px;
+  padding-top: 0px;
+  height: max-content;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  z-index: 10;
 }
 
-.header_flex a img.top{
--moz-filter: invert(100%);
--o-filter: invert(100%);
--ms-filter: invert(100%);
-filter: invert(100%);}
+.header_flex {
+  width: 100%;
+  height: 80px;
+  margin-top: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between; /*各アイテムの均等配置、最初のアイテムは先頭・最後のアイテムは末尾*/
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 2px solid #e6e6e6;
+}
 
-.header_flex a img:hover{
-    opacity: 0.5;
-    cursor: pointer;
+div.top {
+  background: transparent;
+  color: #fff;
+  border-bottom: none;
+}
+
+.header_flex a img {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+.header_flex a img.top {
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
+  -ms-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.header_flex a img:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /*チェックボックスがなくなる*/
-input{
-	display: none;
+input {
+  display: none;
 }
 
 /*ハンバーガー*/
-.navi label{
-	display: none;
+.navi label {
+  display: none;
 }
 
-label#coverlayer{
-    display: none;
+label#coverlayer {
+  display: none;
 }
 
-input:checked + nav + label#coverlayer{
-	width: 100vw;
+input:checked + nav + label#coverlayer {
+  width: 100vw;
 }
 
-.navi label span{/*ハンバーガーメニュー3本線の真ん中役*/
-	display:block;
-	background-color:  #fff;
-	width: 30px;
-	height: 4px;
-	opacity: 1;
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	position: absolute;
-	top: 50%;
-	right: 0;
-	bottom: auto;
-	left: 0px;
-	margin: auto;
-	transform: translateY(-50%);
-	transition-duration: 500ms;
+.navi label span {
+  /*ハンバーガーメニュー3本線の真ん中役*/
+  display: block;
+  background-color: #fff;
+  width: 30px;
+  height: 4px;
+  opacity: 1;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: 0px;
+  margin: auto;
+  transform: translateY(-50%);
+  transition-duration: 500ms;
 }
 
-input:checked + .navi label span{
-	opacity: 0;
+input:checked + .navi label span {
+  opacity: 0;
 }
 
-.navi label::before{ /*上の線*/
-	content: "";
-	display: block; /*これで横幅と高さを持たせることができる*/
-	width: 30px;
-	height: 4px;
-	background-color: #fff;
-	position: absolute;
-	top: 20px;
-	right: 0;
-	bottom: auto;
-	left: 0;
-	margin: auto;
+.navi label::before {
+  /*上の線*/
+  content: "";
+  display: block; /*これで横幅と高さを持たせることができる*/
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  margin: auto;
 }
 
-input:checked + .navi label::before{
-	top: 50%;
-	right: 0;
-	bottom: auto;
-	left: 0px;
-	margin: auto;
-	transform: translateY(-50%);
-	transform: rotate(45deg);
-	transition-duration: 500ms;
+input:checked + .navi label::before {
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: 0px;
+  margin: auto;
+  transform: translateY(-50%);
+  transform: rotate(45deg);
+  transition-duration: 500ms;
 }
 
-.navi label::after{
-	content: "";
-	display: block; /*これで横幅と高さを持たせることができる*/
-	width: 30px;
-	height: 4px;
-	background-color: #fff;
-	position: absolute;
-	top: auto;
-	right: 0;
-	bottom: 20px;
-	left: 0;
-	margin: auto;
+.navi label::after {
+  content: "";
+  display: block; /*これで横幅と高さを持たせることができる*/
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  margin: auto;
 }
 
-input:checked + .navi label::after{
-	top: 50%;
-	right: 0;
-	bottom: auto;
-	left: 0px;
-	margin: auto;
-	transform: translateY(-50%);
-	transform: rotate(-45deg);
-	transition-duration: 500ms;
+input:checked + .navi label::after {
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: 0px;
+  margin: auto;
+  transform: translateY(-50%);
+  transform: rotate(-45deg);
+  transition-duration: 500ms;
 }
-.navi{
-    width: max-content;
-    display: flex;
-    /* width:max-content; */
+.navi {
+  width: max-content;
+  display: flex;
+  /* width:max-content; */
 }
 /*チェックボックスに触ったらnavタグがでてきます*/
-input:checked + nav{
-	right: 0px;
+input:checked + nav {
+  right: 0px;
 }
-.navi p{
-    padding-left: 1.5rem;
-    box-sizing: border-box;
-    font-size: 22px;
-}
-
-.navi p:hover{
-    cursor: pointer;
+.navi p {
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+  font-size: 22px;
 }
 
-.navi a{
-    width: 100%;
-    text-decoration: none;
-    color: #000;
+.navi p:hover {
+  cursor: pointer;
+}
+
+.navi a {
+  width: 100%;
+  text-decoration: none;
+  color: #000;
 }
 /*width:0にしておいてhoverしたときにwidth:100にする*/
-.navi a:after{
-    content: '';
-	width: 0;
-	transition: all 0.3s ease;
-	border-bottom: 1px solid #ff5736;
-	display: block;
+.navi a:after {
+  content: "";
+  width: 0;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #ff5736;
+  display: block;
 }
 
-.navi a:hover:after{
-    width: 100%;
-	border-bottom: 1px solid #ff5736;
+.navi a:hover:after {
+  width: 100%;
+  border-bottom: 1px solid #ff5736;
 }
 
-p.nav_now{
-    color: #ff5736;
+p.nav_now {
+  color: #ff5736;
 }
-.navi .nav_now a{
-    
-    border-bottom: 1px solid #ff5736;
-}
-
-.navi a.top{
-    color: #fff;
-}
-.navi a.top:after{
-	content: '';
-	width: 0;
-	transition: all 0.3s ease;
-	border-bottom: 1px solid #fff;
-	display: block;
+.navi .nav_now a {
+  border-bottom: 1px solid #ff5736;
 }
 
-.navi a.top:hover:after{
-    width: 100%;
-	border-bottom: 1px solid #fff;
+.navi a.top {
+  color: #fff;
+}
+.navi a.top:after {
+  content: "";
+  width: 0;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #fff;
+  display: block;
 }
 
-.top_now{
-	border-bottom: 1px solid #fff;
+.navi a.top:hover:after {
+  width: 100%;
+  border-bottom: 1px solid #fff;
 }
 
-
-
-div.full{
-    background-color: #ff5736;
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0px;
-    left: 0;
+.top_now {
+  border-bottom: 1px solid #fff;
 }
 
-div.top_slider{
- background-attachment: fixed;
- box-sizing: border-box;
- width: 100%; 
- height: 100vh;
- display: flex;
- justify-content: center; /* 子要素をflexboxにより中央に配置する */
- align-items: center; 
- padding-right: 16px;
- padding-left: 16px;
+div.full {
+  background-color: #ff5736;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  left: 0;
 }
 
-div.top_slider p{
-line-height: 5rem;
-color: #fff;
-font-size: 45px; 
-display: block;
-margin: 0 auto;
+div.top_slider {
+  background-attachment: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* 子要素をflexboxにより中央に配置する */
+  align-items: center;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
-div.top_slider span{
-    border-bottom: dotted 3px #fff;
+div.top_slider p {
+  line-height: 5rem;
+  color: #fff;
+  font-size: 45px;
+  display: block;
+  margin: 0 auto;
+}
+
+div.top_slider span {
+  border-bottom: dotted 3px #fff;
 }
 
 /* Extra large devices (large desktops, 1200px and up) 
 default*/
-@media (min-width: 1200px) { 
-
+@media (min-width: 1200px) {
 }
 
- /* Large devices (desktops, 992px and up) */
- @media (min-width: 992px) and (max-width: 1199.98px)  { 
-    div.contents{
-        max-width: 960px;
-    }
- }
-
- /* Medium devices (tablets, 768px and up) */
- @media (min-width: 768px) and (max-width: 991.98px)  { 
-    div.contents{
-        margin-top: 8%;
-        max-width: 720px;
-        padding-right: 16px;
-        padding-left: 16px;
-    }
- }
-
- /* Small devices (landscape phones, 576px and up) */
- @media (min-width: 576px) and (max-width: 767.98px) { 
-    div.contents{
-        max-width: 540px;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        padding-right: 16px;
-        padding-left: 16px;
-    }
-    input:checked + nav + label#coverlayer{
-        width: 100vw;
-    }
-
-    .navi{
-        width: 50%;
-        z-index: 400;
-        display: block;
-        /* width:max-content; */
-        position: fixed;
-        top: 0;
-        right: -50%;
-        bottom: 0;
-        left: auto;
-        transition-duration: 1000ms;
-        background-color: #262626;
-    }
-    /*ハンバーガー*/
-.navi label{
-	display: block;
-	width: 45px;
-	height: 60px;
-	background-color: #3a3a3a;
-	border-radius: 6px 0 0 6px;
-	position: absolute;
-	top:0px;
-	right: 100%;
-	bottom: auto;
-	left: auto;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  div.contents {
+    max-width: 960px;
+  }
 }
 
-label#coverlayer{
-    display: block;
-	background-color: rgba(0,0,0,0.7);
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: auto;
-	z-index: 300;
-	width: 0px;
-	/*文字を追い出す設定*/
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-}
-            
-.navi a{
-    width: 100%;
-    color: #fff;
-}
-.navi a:after{
-    display: none;
-    /* border-bottom: 1px solid #fff; */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  div.contents {
+    margin-top: 8%;
+    max-width: 720px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
 
-.navi a:hover:after{
-    /* border-bottom: 1px solid #fff; */
-}
-
-p.nav_now{
-    color: #fff;
-}
-.navi .nav_now a{
-    
-    border-bottom: 1px solid #fff;
-}
-
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  div.contents {
+    max-width: 540px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  input:checked + nav + label#coverlayer {
+    width: 100vw;
   }
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-h1{
-    font-size: 2.6rem;
+  .navi {
+    width: 50%;
+    z-index: 400;
+    display: block;
+    /* width:max-content; */
+    position: fixed;
+    top: 0;
+    right: -50%;
+    bottom: 0;
+    left: auto;
+    transition-duration: 1000ms;
+    background-color: #262626;
+  }
+  /*ハンバーガー*/
+  .navi label {
+    display: block;
+    width: 45px;
+    height: 60px;
+    background-color: #3a3a3a;
+    border-radius: 6px 0 0 6px;
+    position: absolute;
+    top: 0px;
+    right: 100%;
+    bottom: auto;
+    left: auto;
+  }
+
+  label#coverlayer {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    z-index: 300;
+    width: 0px;
+    /*文字を追い出す設定*/
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .navi a {
+    width: 100%;
+    color: #fff;
+  }
+  .navi a:after {
+    display: none;
+    /* border-bottom: 1px solid #fff; */
+  }
+
+  .navi a:hover:after {
+    /* border-bottom: 1px solid #fff; */
+  }
+
+  p.nav_now {
+    color: #fff;
+  }
+  .navi .nav_now a {
+    border-bottom: 1px solid #fff;
+  }
 }
 
-div .contents{
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  div.contents {
     margin-top: 18%;
     margin-bottom: 10%;
     padding: 0 16px;
-    }
-    
-    input:checked + nav + label#coverlayer{
-        width: 100vw;
-    }
-    
-    .navi{
-        width: 50%;
-        z-index: 400;
-        display: block;
-        /* width:max-content; */
-        position: fixed;
-        top: 0;
-        right: -50%;
-        bottom: 0;
-        left: auto;
-        transition-duration: 1000ms;
-        background-color: #262626;
-    }
+  }
 
-    /*ハンバーガー*/
-    .navi label{
-        display: block;
-        width: 45px;
-        height: 60px;
-        background-color: #3a3a3a;
-        border-radius: 6px 0 0 6px;
-        position: absolute;
-        top:0px;
-        right: 100%;
-        bottom: auto;
-        left: auto;
-    }
-    
-    label#coverlayer{
-        display: block;
-        background-color: rgba(0,0,0,0.7);
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: auto;
-        z-index: 300;
-        width: 0px;
-        /*文字を追い出す設定*/
-        text-indent: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-        
-    .navi a{
-        color: #fff;
-    }
-    .navi a:after{
-        display: none;
-        /* border-bottom: 1px solid #fff; */
-    }
-    
-    .navi a:hover:after{
-        /* border-bottom: 1px solid #fff; */
-    }
-    
-    p.nav_now{
-        color: #fff;
-    }
-    .navi .nav_now a{
-        
-        border-bottom: 1px solid #fff;
-    }
+  input:checked + nav + label#coverlayer {
+    width: 100vw;
+  }
+
+  .navi {
+    width: 50%;
+    z-index: 400;
+    display: block;
+    /* width:max-content; */
+    position: fixed;
+    top: 0;
+    right: -50%;
+    bottom: 0;
+    left: auto;
+    transition-duration: 1000ms;
+    background-color: #262626;
+  }
+
+  /*ハンバーガー*/
+  .navi label {
+    display: block;
+    width: 45px;
+    height: 60px;
+    background-color: #3a3a3a;
+    border-radius: 6px 0 0 6px;
+    position: absolute;
+    top: 0px;
+    right: 100%;
+    bottom: auto;
+    left: auto;
+  }
+
+  label#coverlayer {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    z-index: 300;
+    width: 0px;
+    /*文字を追い出す設定*/
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .navi a {
+    color: #fff;
+  }
+  .navi a:after {
+    display: none;
+    /* border-bottom: 1px solid #fff; */
+  }
+
+  .navi a:hover:after {
+    /* border-bottom: 1px solid #fff; */
+  }
+
+  p.nav_now {
+    color: #fff;
+  }
+  .navi .nav_now a {
+    border-bottom: 1px solid #fff;
+  }
 }
-
-
-
-
-
-
-
